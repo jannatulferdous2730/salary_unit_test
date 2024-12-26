@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
           if(salary != null) ...[
             Text("Your salary"),
 
-            Text("Dollar="+salary.toString(), style: TextStyle(
+            Text("TK "+salary.toString(), style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 50,
             ),)

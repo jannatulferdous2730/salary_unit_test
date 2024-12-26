@@ -1,15 +1,17 @@
 class SalaryCalculation {
 
   int calculateSalary(int hour) {
-    int perHourPayment;
+    int baseRate = 400;
+    int additionalRate = 600;
+    int salary;
 
     if (hour <= 40) {
-      perHourPayment = 400;
+      salary = hour * baseRate;
     } else {
-      perHourPayment = 600;
+      salary = (40 * baseRate) + ((hour - 40) * additionalRate);
     }
 
-    return hour * perHourPayment;
+    return salary;
   }
 
 }
